@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+/* Logo, navigation and button in one line */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+/* University name on the left */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Navigation links in the middle */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex: 1;
+    margin: 0 25px;
+}
+
+nav a {
+    white-space: nowrap;
+}
+
+/* Explore campus button on the right */
+.nav-button {
+    margin: 0;
+    background-color: #286d68;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Main section */
+main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Tagline */
+.tagline {
+    display: inline-block;
+    background-color: #b4c7c5;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Main content */
+content {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading */
+content h1 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Paragraph */
+content p {
+    font-size: 18px;
+    margin: 15px;
+    padding: 25px;
+}
+
+/* Gallery and picnic buttons */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.btn a {
+    display: inline-block;
+    background-color: #286d68;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.nav-button:hover,
+
+.btn a:hover {
+    background-color: #174d49;
+}
+
+/* Smaller screens */
+@media (max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 0;
+    }
+}
