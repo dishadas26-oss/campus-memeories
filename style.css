@@ -171,6 +171,7 @@ content p {
 }
 
 .picnic {
+    
     padding: 30px;
     margin: 40px auto;
     max-width: 600px;
@@ -181,7 +182,7 @@ content p {
     font-size: 40px;
 }
 
-.picnic h2 {
+.picnic h2 { 
     font-size: 30px;
 }
 
